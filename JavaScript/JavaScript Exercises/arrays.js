@@ -38,7 +38,7 @@ function whosPaying(people) {
     let numberOfNames = people.length
     let randomNamePosition = Math.floor(Math.random() * numberOfNames)
     let randomName = people[randomNamePosition]
-    return randomName + " is going to buy luch today."
+    return randomName + " is going to buy lunch today!"
 }
 
 console.log(whosPaying(people))
