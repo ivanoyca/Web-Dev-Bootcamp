@@ -1,0 +1,167 @@
+body {
+  /* font-family: "Montserrat"; */
+}
+
+#title {
+  background-color: #ff4261;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+#title h1 {
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: 900;
+  color: white;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#iphone {
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 25%;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+.main-text {
+  margin-bottom: 3.5rem;
+  line-height: 1.5;
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Features Section */
+
+#features {
+  background-color: white;
+  padding: 7% 15%;
+  position: relative;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+h2 {
+  /* font-family: "Montserrat"; */
+  /* font-weight: 700; */
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Montserrat";
+  font-weight: 300;
+  color: #8f8f8f;
+}
+
+.icon {
+  color: #ef7468;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonials Section */
+
+#testimonials {
+  text-align: center;
+  background-color: #ef7468;
+  color: #fff;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #ef7468;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* Princing Section */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+.signup-btn {
+  width: 100%;
+}
+
+#cta {
+  text-align: center;
+  background-color: #ff4261;
+  color: #fff;
+  padding: 7% 15%;
+}
+
+#cta h3 {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  #iphone {
+    width: 60%;
+    position: static;
+    transform: rotate(0);
+  }
+}

@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", sans-serif;
+}
+h1 {
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: "Libre Baskerville", cursive;
+  color: #4ab19a;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #66bfbf;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #11999e;
+}
+
+a {
+  text-decoration: none;
+  color: #11999e;
+}
+
+.top-container {
+  background-color: #e1ebe8;
+  position: relative;
+  padding-top: 200px;
+}
+.pro {
+  text-decoration: underline;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 150px;
+}
+.skill-row {
+  margin: 100px auto 100px auto;
+  width: 50%;
+  text-align: left;
+  line-height: 2;
+}
+
+.wdicon {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.des-icon {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  height: 150px;
+  padding-top: 50px;
+  margin-top: 100px;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #11999e;
+  font-size: 20px;
+  margin: 10px 20px;
+}
+
+.footer-link:hover {
+  color: #eaf6f6;
+}
+
+.bottom-container p {
+  margin: 40px 0px;
+  color: #eaf6f6;
+  font-size: 13px;
+}
+
+.contact-me p,
+h2,
+h3 {
+  margin-bottom: 50px;
+}
+
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #66bfbf;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #85eded;
+  text-decoration: none;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 4px;
+  width: 4%;
+  margin: 100px auto 100px auto;
+}

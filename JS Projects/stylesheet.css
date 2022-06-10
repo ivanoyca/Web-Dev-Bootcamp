@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(253, 165, 41);
+  display: flex;
+  justify-content: center;
+}
+.content {
+  height: 400px;
+  width: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 170px;
+}
+h1 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+button {
+  background-color: rgb(253, 165, 41);
+  border: solid 1px white;
+  border-radius: 3px;
+  color: white;
+  font-size: 1.2em;
+  width: 180px;
+  padding: 18px 10px;
+  cursor: pointer;
+}
+
+p {
+  color: white;
+  font-family: sans-serif;
+  margin-bottom: 100px;
+  font-size: 3em;
+}
