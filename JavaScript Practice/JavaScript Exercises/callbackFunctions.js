@@ -1,0 +1,15 @@
+function weAddEventListener(typeOfEvent, callback) {
+    let eventThatHappened = {
+        type: "keydown",
+        key: "w",
+        duration: 2
+    }
+
+    if (eventThatHappened.eventType === typeOfEvent) {
+        callback(eventThatHappened)
+    }
+}
+
+weAddEventListener("keypressed", function (e) {
+    console.log(e)
+})
