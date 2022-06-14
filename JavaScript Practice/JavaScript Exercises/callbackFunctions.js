@@ -10,6 +10,6 @@ function weAddEventListener(typeOfEvent, callback) {
     }
 }
 
-weAddEventListener("keypressed", function (e) {
+weAddEventListener("keydown", function (e) {
     console.log(e)
 })
