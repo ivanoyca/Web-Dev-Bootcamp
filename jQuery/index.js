@@ -1,3 +1,5 @@
+//? ------------- jQuery Basics -------------
+//* ------------- jQuery Change Attributes and Classes -------------
 $("h1").addClass("big-title margin-50"); //Adds classes to the tag
 $("button").text("<em>Hey</em>") //Selects all elements with the same selector {button}, Ingores HTML Tags.
 $("a").attr("href", "http://bing.com/") //Selects anchor tag "a" and changes the href to "http://bing.com".
@@ -28,4 +30,21 @@ $("h1").after("<button>New</button>") //Adds button after h1 tag
 $("h1").prepend("<button>New</button>") //Adds button at the beginning of the content of the h1 tag
 $("h1").append("<button>New</button>") //Adds button at the end of the content of the h1 tag
 
-$("button").remove() //Removes all button elements
+// $("button").remove() //Removes all button elements
+
+//* ------------- jQuery Effect Methods -------------
+$(".first").on("click", function () {
+    $("h1").toggle()
+}) // .hide() hides h1 when button is clicked, .show() shows back, toggle
+
+$(".second").on("click", function () {
+    $("h1").fadeToggle()
+})
+
+$(".third").on("click", function () {
+    $("h1").slideUp()
+})
+
+$(".fourth").on("click", function () {
+    $("h1").slideDown()
+})
