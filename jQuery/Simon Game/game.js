@@ -6,7 +6,7 @@ let startedToToggle = true
 
 $(document).on('keypress', function (event) {
     if (startedToToggle == true) {
-        if (event.key === "a") {
+        if (event.key === "b") {
             nextSequence()
             startedToToggle = false
         }
@@ -14,14 +14,14 @@ $(document).on('keypress', function (event) {
 })
 
 function nextSequence() {
+    userClickedPattern = []
+    level++
     let randomNumber = Math.floor(Math.random() * 4)
     let randomChosenColor = buttonColors[randomNumber]
     gamePattern.push(randomChosenColor)
     $("#" + randomChosenColor).fadeIn(100).fadeOut(100).fadeIn(100)
     playSound(randomChosenColor)
-    level++
     $("h1").text(`Level: ${level}`)
-    console.log(gamePattern)
 }
 
 $("div .btn").on("click", function () {
@@ -29,8 +29,7 @@ $("div .btn").on("click", function () {
     userClickedPattern.push(userChosenColor)
     playSound(userChosenColor)
     animatePress(userChosenColor)
-    nextSequence()
-    checkAnswer()
+    checkAnswer(userClickedPattern.length - 1)
 })
 
 function animatePress(currentColor) {
@@ -46,8 +45,31 @@ function playSound(name) {
 }
 
 function checkAnswer(currentLevel) {
+    if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
+        console.log("success")
+        if (gamePattern.length === userClickedPattern.length) {
+            setTimeout(function () {
+                nextSequence()
+            }, 1000)
+        }
+        console.log("success")
+    } else {
+        console.log("wrong")
+        let wrongSound = new Audio('sounds/wrong.mp3')
+        wrongSound.play()
+        $("body").addClass("game-over")
+        setTimeout(function () {
+            $("body").removeClass("game-over")
+        }, 200)
+        $("h1").text("Game Over, Press Any Key to Restart")
+        startOver()
+    }
+}
 
-
+function startOver() {
+    level = 0
+    gamePattern = []
+    startedToToggle = true
 }
 
 
